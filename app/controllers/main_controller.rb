@@ -26,6 +26,8 @@ class MainController < ApplicationController
     # CloudCapacitor::Settings.capacitor["medium_deviation"] = params[:medium_deviation].to_f if !params[:medium_deviation].empty?
 
     @sla              = CloudCapacitor::Settings.capacitor.sla
+    @catbypass = false
+    @catbypass = true if params[:catbypass] == "true"
 
     case params[:graph_mode].to_sym
       when :capacity
@@ -43,7 +45,7 @@ class MainController < ApplicationController
 
     puts @graph_mode.class
 
-    capacitor = CloudCapacitor::Capacitor.new @graph_mode
+    capacitor = CloudCapacitor::Capacitor.new @graph_mode, @catbypass
     capacitor.executor = CloudCapacitor::Executors::DummyExecutor.new
     capacitor.strategy = CloudCapacitor::Strategies::MCG_Strategy.new
 
