@@ -20,7 +20,7 @@
               <div class="form-group">
                 <div class="col-lg-12">
                   <%= label_tag(:graph_mode, "Traversal Mode:", class: "control-label") %>
-                  <%= select_tag(:graph_mode, options_for_select([ :capacity, :cost ], @graph_mode), class: "form-control") %>
+                  <%= select_tag(:graph_mode, options_for_select([ :capacity, :cost , :mem, :cpu], @graph_mode), class: "form-control") %>
 	        </div>
 		<div class="col-lg-12">
 			<%= label_tag(:catbypass, "Bypass Category:", class: "control-label") %>

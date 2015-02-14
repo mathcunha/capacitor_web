@@ -34,6 +34,10 @@ class MainController < ApplicationController
         @graph_mode = :strict
       when :cost
         @graph_mode = :price
+      when :cpu
+	@graph_mode = :cpu
+      when :mem
+	@graph_mode = :mem
       else
         @graph_mode = :strict
     end
