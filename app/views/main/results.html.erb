@@ -9,9 +9,18 @@
               <td><h4 class="list-group-item-heading">SLA: <%= @sla %></h4></td>
               <td><h4 class="list-group-item-heading">Workload approach: <%= @workload_approach.to_s.classify %></h4></td>
               <td><h4 class="list-group-item-heading">Configuration approach: <%= @configuration_approach.to_s.classify %></h4></td>
-              <td><h4 class="list-group-item-heading">Graph: <%= @graph_mode == :strict ? "Capacity" : "Price" %></h4></td>
+	      <td><h4 class="list-group-item-heading">Graph: <%= @graph_mode == :strict ? "Capacity" : "Price" %></h4></td>
+	      <td><h4 class="list-group-item-heading"> Bypass:<%=@catbypass%></h4></td>
             </tr>
           </table>
+          <h3 class="list-group-item-heading">Accuracy:</h3>
+          <table class="table table-condensed">
+		  <tr>
+			  <td><h4 class="list-group-item-heading">FN: <%= @confusion_matrix[:fn] %></h4></td>
+			  <td><h4 class="list-group-item-heading">TP: <%= @confusion_matrix[:tp] %></h4></td>
+			  <td><h4 class="list-group-item-heading">F-Measure: <%=@global_f_measure%></h4></td>
+		  </tr>
+	  </table>
           <h3 class="list-group-item-heading">Stats:</h3>
           <table class="table table-condensed">
             <tr>
