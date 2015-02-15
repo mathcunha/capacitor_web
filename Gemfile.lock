@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/marcelocg/cloud_capacitor.git
-  revision: e53762b764f2f98fdf0bbbb8e3ec73ddb4789b89
+  remote: git://github.com/mathcunha/cloud_capacitor.git
+  revision: 4f01de59b2e202b16542228581cdcb3d49b94c12
   specs:
     cloud_capacitor (0.0.1)
       plexus
@@ -64,7 +64,7 @@ GEM
     debugger-linecache (1.2.0)
     erubis (2.7.0)
     execjs (2.2.1)
-    facets (2.9.3)
+    facets (3.0.0)
     hike (1.2.3)
     i18n (0.6.11)
     jquery-rails (3.1.2)
@@ -108,7 +108,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.13.0)
     rake (10.3.2)
-    redis (3.1.0)
+    redis (3.2.1)
     ref (1.0.5)
     sass (3.2.19)
     sass-rails (4.0.3)

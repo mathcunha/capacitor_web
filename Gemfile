@@ -23,7 +23,8 @@ gem 'jquery-rails'
 gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git', :branch => 'bootstrap3'
 
 # The cloud_capacitor makes all the magic happen
-gem 'cloud_capacitor', git: 'git://github.com/marcelocg/cloud_capacitor.git'
+gem 'cloud_capacitor', git: 'git://github.com/mathcunha/cloud_capacitor.git'
+#gem 'cloud_capacitor', path: '/vagrant/repos/cloud_capacitor'
 
 gem 'byebug', group: :development
 
