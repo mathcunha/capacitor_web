@@ -10,11 +10,13 @@ capacitor:
   #All deviations above this (+/-) factor are considered high
   medium_deviation: 0.10
 
-  #The normal operation level for the cpu % usage
-  cpu_limit: 75
-
-  #The normal operation level for the memory % usage
-  mem_limit: 75
+ #The operations levels for the cpu % usage
+  cpu_low: 40
+  cpu_moderate: 70
+ 
+ #The operations levels for the memory % usage
+  mem_low: 40
+  mem_moderate: 70
 
 deployment_space:
   #The maximum price for a whole Configuration.

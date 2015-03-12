@@ -9,7 +9,7 @@
               <td><h4 class="list-group-item-heading">SLA: <%= @sla %></h4></td>
               <td><h4 class="list-group-item-heading">Workload approach: <%= @workload_approach.to_s.classify %></h4></td>
               <td><h4 class="list-group-item-heading">Configuration approach: <%= @configuration_approach.to_s.classify %></h4></td>
-	      <td><h4 class="list-group-item-heading">Graph: <%= @graph_mode == :strict ? "Capacity" : "Price" %></h4></td>
+	      <td><h4 class="list-group-item-heading">Graph: <%= @graph_mode == :strict ? "Capacity" : @graph_mode %></h4></td>
 	      <td><h4 class="list-group-item-heading"> Bypass:<%=@catbypass%></h4></td>
             </tr>
           </table>
